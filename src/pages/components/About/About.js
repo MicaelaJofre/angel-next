@@ -4,6 +4,7 @@ import cartel from "../../../../public/img/about/angelCartel.jpeg"
 import Play from "../icons/Play"
 import { useState } from "react"
 import Modal from "../utils/Modal"
+import droneVideoAbout from "../../../../public/img/about/angelCartel.jpeg"
 
 const About = () => {
   const [show, setShow] = useState(false)
@@ -31,7 +32,7 @@ const About = () => {
       </article>
       {
         show 
-        ? <Modal handleModal={handleModal}/>
+        ? <Modal handleModal={handleModal} img={droneVideoAbout}/>
         : null
       }
     </section>
