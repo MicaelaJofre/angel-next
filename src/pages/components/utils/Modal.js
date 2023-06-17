@@ -1,15 +1,14 @@
 import Image from "next/image"
 //import droneVideoAbout from "../../../../public/video/droneVideoAbout.mp4"
-import droneVideoAbout from "../../../../public/img/about/angelCartel.jpeg"
 import close from "../../../../public/img/close.png"
 
-const Modal = ({ handleModal }) => {
+const Modal = ({ handleModal, img }) => {
   const stopPropagation = (e) => {
     e.stopPropagation();
   };
   return (
     <div
-      className="modal fixed top-0 left-0 flex justify-center items-center w-full h-full bg-black/70 cursor-pointer"
+      className="modal fixed top-0 left-0 flex justify-center items-center w-full h-full bg-black/70 cursor-pointer z-10"
       onClick={handleModal}
     >
       <div className="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center">
@@ -33,7 +32,7 @@ const Modal = ({ handleModal }) => {
           >
             <source src={droneVideoAbout} type="video/mp4" />
           </video> */}
-          <Image className="w-full h-full object-cover" width={500} height={500} alt="prueba" src={droneVideoAbout}/>
+          <Image className="w-full h-full object-cover" width={500} height={500} alt="prueba" src={img}/>
         </div>
       </div>
     </div>
