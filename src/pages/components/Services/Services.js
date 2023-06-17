@@ -1,6 +1,7 @@
 import VideoCamera from "../icons/VideoCamera"
 import VideoPlay from "../icons/VideoPlay"
 import ServicesDetails from "./ServicesDetails"
+import ServicesInfo from "./ServicesInfo"
 
 const services = [
   {
@@ -29,12 +30,12 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="min-h-screen h-full bg-black pt-5 pl-20">
-      <article className="flex items-center gap-8">
+    <section className="min-h-screen h-full bg-black py-10 flex flex-col gap-20">
+      <article className="flex flex-wrap gap-12 md:gap-8 p-5 md:pl-20 ">
         {
           services.map(serv => {
             return(
-              <div key={serv.title} className="w-1/3">
+              <div key={serv.title} className="w-full md:w-1/3">
                 <ServicesDetails title={serv.title} descriptions={serv.descriptions} Svg={serv.Svg}/>
               </div>
             )
@@ -42,7 +43,7 @@ const Services = () => {
         }
       </article>
       <article>
-
+        <ServicesInfo/>
       </article>
     </section>
   )

@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-const ServicesDetails = ({title, descriptions, Svg}) => {
-  console.log(descriptions);
-  
+const ServicesDetails = ({title, descriptions, Svg}) => {  
   return (
     <div className="flex flex-col gap-4">
       <div className="text-brownLigth ">
