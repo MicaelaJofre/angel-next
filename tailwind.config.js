@@ -12,7 +12,7 @@ module.exports = {
         gray2: "#a39999",
         gray3: "#d6d4d1",
         graySelect:"#F1F1F1",
-        brownLigth:"#9D8F8F",
+        brownLigth:"#9d8f8f",
         white: "#f9f9f9"
       },
       minHeight: {
