@@ -17,6 +17,9 @@ module.exports = {
       },
       minHeight: {
         '1/2': '70%',
+      },
+      gridTemplateColumns: {
+        work: 'repeat(auto-fill, minmax(400px, 1fr))'
       }
     },
   },
